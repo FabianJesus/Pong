@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="assets/css/main.css"
+    />
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <h1 class="main-tittle">PONG Game</h1>
+    <input
+      id="startButton"
+      type="button"
+      value="Start"
+      onclick="controllerP.starGame()"
+      class="button"
+    />
+    <div class="console">
+      <h3 class="console-tittle">Consola</h3>
+    </div>
+    <div class="board-game" id="board">
+      <h2 id="score-1" class="score score-1">0</h2>
+      <h2 id="score-2" class="score score-2">0</h2>
+      <h2 class="player-name player-name-1">Player 1</h2>
+      <h2 class="player-name player-name-2">Player 2</h2>
+      <div class="division-line"></div>
+      <div class="player player-1" id="bar1"></div>
+      <div class="ball" id="ball"></div>
+      <div class="player player-2" id="bar2"></div>
+      <div id="goal" class="goal ">GOAL!</div>
+    </div>
+  </body>
+  <script src="assets/constans/pongContans.js"></script>
+  <script src="assets/constans/viewContans.js"></script>
+  <script src="assets/lib/rxjs.js"></script>
+  <script src="service/pong.service.js"></script>
+  <script src="controllers/viewController.js"></script>
+  <script src="controllers/controllerPong.js"></script>
+  <script src="app.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css?family=VT323&display=swap"
+    rel="stylesheet"
+  />
+</html>

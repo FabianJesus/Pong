@@ -1,0 +1,156 @@
+*,
+body {
+  background: black;
+}
+.main-tittle {
+  padding: 2%;
+  color: rgb(2, 255, 57);
+  background: none;
+  position: absolute;
+  top: -6.5%;
+  left: 10%;
+  font-family: 'VT323', monospace;
+  font-weight: bold;
+  font-size: 7em;
+}
+.console {
+  padding: 2%;
+  border: solid 1px rgb(42, 228, 82);
+  background: rgba(17, 17, 17, 0.5);
+  width: 200px;
+  height: 80px;
+  position: absolute;
+  top: 2%;
+  left: 57%;
+}
+.console-tittle {
+  padding: 2%;
+  color: white;
+  background: none;
+  position: absolute;
+  top: -19%;
+  left: 2%;
+  font-family: 'VT323', monospace;
+  font-weight: bold;
+  font-size: 2em;
+}
+.board-game {
+  padding: 2%;
+  border: solid 2px white;
+  width: 1300px;
+  height: 700px;
+  margin: auto;
+  margin-top: 10%;
+  position: relative;
+}
+.division-line {
+  position: absolute;
+  border: dashed 2px white;
+  height: 100%;
+  top: 0;
+  left: 50%;
+}
+.player {
+  position: absolute;
+  background: white;
+  width: 20px;
+  height: 150px;
+  top: 40%;
+}
+.player-1 {
+  left: 100px;
+}
+.player-2 {
+  right: 100px;
+}
+.player-name {
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  color: white;
+  position: absolute;
+  top: -6.5%;
+  font-family: 'VT323', monospace;
+  font-weight: bold;
+  font-size: 2.6em;
+}
+.player-name-1 {
+  left: 50px;
+}
+.player-name-2 {
+  right: 50px;
+}
+.score {
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  color: white;
+  position: absolute;
+  top: -19.5%;
+  font-family: 'VT323', monospace;
+  font-weight: bold;
+  font-size: 7em;
+}
+.score-1 {
+  left: 42%;
+}
+.score-2 {
+  right: 42%;
+}
+.ball {
+  position: absolute;
+  background: white;
+  width: 20px;
+  height: 20px;
+  bottom: 50%;
+  left: 50%;
+}
+.goal {
+  position: absolute;
+  color: white;
+  background: transparent;
+  font-size: 15em;
+  font-weight: bold;
+  opacity: 0;
+  bottom: 36%;
+  left: 30%;
+  font-family: 'VT323', monospace;
+}
+.animation-goal {
+  animation: join 5s both;
+}
+@keyframes join {
+  0% {
+    opacity: 0;
+    bottom: 60%;
+  }
+  20% {
+    bottom: 30%;
+  }
+  35% {
+    bottom: 40%;
+  }
+  50% {
+    opacity: 1;
+    bottom: 36%;
+    left: 30%;
+  }
+  65% {
+    left: 40%;
+  }
+  100% {
+    left: 0%;
+    opacity: 0;
+    bottom: 36%;
+  }
+}
+.button {
+  position: absolute;
+  top: 6%;
+  left: 40%;
+  background: transparent;
+  color: white;
+  font-size: 2.2em;
+  font-family: 'VT323', monospace;
+  border: solid 2px white;
+  padding: 0.3em;
+  cursor: pointer;
+}
